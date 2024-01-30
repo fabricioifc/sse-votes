@@ -10,6 +10,7 @@ app.use(express.static('public'));
 const clients = [];
 // Array com todos os alunos da turma
 let presentStudents = [
+  { name: 'Bruno', present: false },
   { name: 'Fabricio', present: false },
   { name: 'Lucas', present: false },
   { name: 'Rafael', present: false },
