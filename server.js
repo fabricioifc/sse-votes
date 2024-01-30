@@ -42,6 +42,7 @@ app.post('/markAttendance', (req, res) => {
   const { name, present } = req.body;
   if (name && present !== undefined) {
     markAttendance({ name, present});
+
     res.sendStatus(200, 'Attendance marked');
   } else {
     res.sendStatus(400, 'Invalid request');
